@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  height: 54px;
+  width: 100%;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 935px;
+}
+
+.divider {
+  border: 1px solid #dbdbdb;
+  height: 23px;
+  margin: 0 10px;
+}
+
+.insta-logos {
+  display: flex;
+  align-items: center;
+}
+.insta-logos img {
+  margin-top: 7px;
+}
+
+.top-menu input {
+  text-align: center;
+  height: 28px;
+  width: 218px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+  outline: none;
+}
+
+.other-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 148px;
+}
+
+/* MAIN STORIES */
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  margin-top: 88px;
+  width: 935px;
+}
+
+.home {
+  width: 614px;
+}
+
+.box-stories {
+  display: flex;
+  align-items: center;
+  height: 118px;
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding-left: 23px;
+
+  overflow: hidden;
+}
+
+.storie-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/stories_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 66px;
+  height: 66px;
+}
+
+.storie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-right: 14px;
+  height: 85px;
+}
+
+.box-stories img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+}
+
+/* MAIN POSTS */
+.posts {
+  margin-top: 24px;
+}
+
+.icones {
+  display: flex;
+  justify-content: space-between;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* ION */
+ion-icon {
+  font-size: 23px;
+}
