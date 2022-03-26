@@ -3,6 +3,21 @@
   font-family: "Roboto", sans-serif;
 }
 
+body p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+body h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+body h3 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
 /* HEADER */
 header {
   display: flex;
@@ -16,7 +31,7 @@ header {
   left: 0;
 }
 
-.top-menu {
+.menu-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,10 +52,10 @@ header {
   margin-top: 7px;
 }
 
-.top-menu input {
+.menu-top input {
   text-align: center;
-  height: 28px;
-  width: 218px;
+  height: 26px;
+  width: 215px;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   background-color: #fafafa;
@@ -53,6 +68,7 @@ header {
   justify-content: space-between;
   width: 148px;
 }
+/* HEADER */
 
 /* MAIN STORIES */
 main {
@@ -64,6 +80,7 @@ main {
   display: flex;
   margin-top: 88px;
   width: 935px;
+  background-color: #ffffff;
 }
 
 .home {
@@ -79,6 +96,7 @@ main {
   border-radius: 3px;
   padding-left: 23px;
 
+  background-color: #ffffff;
   overflow: hidden;
 }
 
@@ -110,22 +128,71 @@ main {
   width: 56px;
   height: 56px;
 }
+/* MAIN STORIES */
 
 /* MAIN POSTS */
 .posts {
   margin-top: 24px;
 }
 
-.icones {
+.post {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  margin-bottom: 60px;
+}
+
+.post-top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 17px;
+  border-bottom: 1px solid #efefef;
+}
+
+.post-top section {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.post-top h2 {
+  margin-left: 15px;
+}
+
+.icons-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.icons-bottom section {
+  display: flex;
+  justify-content: space-between;
+  width: 93px;
+}
+.likes {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  margin-bottom: 14px;
+}
+
+.likes img {
+  margin-right: 5px;
 }
 
 strong {
   font-weight: bold;
 }
 
+/* MAIN POSTS */
+
 /* ION */
+/* .menu-top  */
 ion-icon {
   font-size: 23px;
+}
+
+.icons-bottom ion-icon {
+  font-size: 22px;
 }
