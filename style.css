@@ -3,10 +3,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 body p {
   font-size: 14px;
   font-weight: 300;
@@ -20,6 +16,12 @@ body h2 {
 body h3 {
   font-size: 12px;
   font-weight: 400;
+}
+
+img,
+h2,
+h3 {
+  cursor: pointer;
 }
 
 /* HEADER */
@@ -234,6 +236,12 @@ strong {
   margin-left: 17px;
 }
 
+.profile img {
+  height: 56px;
+  width: 56px;
+  border-radius: 28px;
+}
+
 .profile h2 {
   margin-bottom: 5px;
 }
@@ -282,10 +290,21 @@ strong {
   font-weight: 500;
 }
 
+.options h2:hover {
+  text-decoration: underline;
+}
+
 .follow {
   color: #139ef2;
   font-size: 12px;
   font-weight: 500;
+}
+
+.follow:hover {
+  /* color: #a9bdca; */
+  opacity: 0.4;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .infos h5 {
@@ -308,8 +327,11 @@ ion-icon {
   font-size: 22px;
 }
 
-/* RESPONSIVE */
+ion-icon:hover {
+  cursor: pointer;
+}
 
+/* RESPONSIVE */
 @media screen and (max-width: 935px) {
   .sidebar {
     display: none;
@@ -321,16 +343,23 @@ ion-icon {
 
   .container {
     justify-content: center;
-    width: 100%;
+    width: 614px;
   }
 }
 
+/*////////// */
 @media screen and (min-width: 614px) {
   .header-mobile {
     display: none;
   }
-}
 
+  .mobile {
+    display: none;
+  }
+}
+/*////////// */
+
+/* MOBILE */
 @media screen and (max-width: 614px) {
   .menu-top {
     display: none;
@@ -363,5 +392,18 @@ ion-icon {
 
   .vector {
     display: none;
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 21px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+    background-color: #ffffff;
   }
 }
